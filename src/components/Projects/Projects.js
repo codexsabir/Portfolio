@@ -27,8 +27,8 @@ function Projects() {
               isBlog={false}
               title="Discuss"
               description="Discuss App offers a seamless virtual communication experience, akin to the popular platform Zoom. It enables users to engage in high-quality video conferencing, fostering collaboration and connection across distances.Discuss App brings people together, facilitating smooth communication and efficient teamwork in any setting."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -49,8 +49,8 @@ function Projects() {
               isBlog={false}
               title="Send App"
               description="Send App is a dynamic communication platform inspired by the renowned tool Slack. It empowers teams to collaborate effortlessly, facilitating real-time messaging, file sharing, and project management. With its intuitive interface and robust features, Send App enhances productivity and fosters seamless collaboration, allowing teams to stay connected and achieve their goals with ease."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
+              // ghLink="https://github.com/soumyajit4419/Editor.io"
+              // demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
@@ -60,8 +60,8 @@ function Projects() {
               isBlog={false}
               title="Projex"
               description="Projex is a versatile project management application modeled after the popular tool ClickUp. Offering a comprehensive suite of organizational features, Projex simplifies task management, team collaboration, and project tracking."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              // ghLink="https://github.com/soumyajit4419/Plant_AI"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
