@@ -12,8 +12,8 @@ function AboutCard() {
             from <span className="purple"> Kohat, Pakistan.</span>
             <br />
             I am currently working as a MERN Stack Web-developer at Brandora.
-            <br />
-            I am doing BSCS from (KUST)
+           
+
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
