@@ -8,7 +8,11 @@ import projex from "../../Assets/Projects/projex.png";
 import discuss from "../../Assets/Projects/discuss.png";
 import send from "../../Assets/Projects/send.png";
 import leauto from "../../Assets/Projects/leauto.png";
-
+import bridgeREx from "../../Assets/Projects/bridgeRex.png";
+import Mazen from "../../Assets/Projects/mazen.png";
+import naviscom from "../../Assets/Projects/naviscom.png";
+import moosa from "../../Assets/Projects/moosa.png";
+import github from "../../Assets/Projects/github.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -31,23 +35,33 @@ function Projects() {
               // demoLink="https://chatify-49.web.app/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
+                   <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leauto}
+              imgPath={naviscom}
               isBlog={false}
-              title="LiAuto"
-              description="Liauto is a cutting-edge automation application revolutionizing lead generation and campaign management. By seamlessly integrating advanced technologies, Liauto streamlines the process of identifying potential leads and orchestrating targeted marketing campaigns with unparalleled efficiency."
-              // ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              // demoLink="https://blogs.soumya-jit.tech/"
+              title="Naviscom"
+              description="Naviscom is a cloud-native platform designed for automated deployment on AWS. It streamlines the deployment process, enabling efficient, scalable, and reliable application delivery in the cloud."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
+
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={send}
               isBlog={false}
               title="Send App"
+              description="Send App is a dynamic communication platform inspired by the renowned tool Slack. It empowers teams to collaborate effortlessly, facilitating real-time messaging, file sharing, and project management. With its intuitive interface and robust features, Send App enhances productivity and fosters seamless collaboration, allowing teams to stay connected and achieve their goals with ease."
+              // ghLink="https://github.com/soumyajit4419/Editor.io"
+              // demoLink="https://editor.soumya-jit.tech/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={moosa}
+              isBlog={false}
+              title="Moosa Academy"
               description="Send App is a dynamic communication platform inspired by the renowned tool Slack. It empowers teams to collaborate effortlessly, facilitating real-time messaging, file sharing, and project management. With its intuitive interface and robust features, Send App enhances productivity and fosters seamless collaboration, allowing teams to stay connected and achieve their goals with ease."
               // ghLink="https://github.com/soumyajit4419/Editor.io"
               // demoLink="https://editor.soumya-jit.tech/"
@@ -62,6 +76,89 @@ function Projects() {
               description="Projex is a versatile project management application modeled after the popular tool ClickUp. Offering a comprehensive suite of organizational features, Projex simplifies task management, team collaboration, and project tracking."
               // ghLink="https://github.com/soumyajit4419/Plant_AI"
               // demoLink="https://plant49-ai.herokuapp.com/"
+            />
+
+          </Col>
+        {/*  BridgeRex*/}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bridgeREx}
+              isBlog={false}
+              title="BridgeRex"
+              description="BridgeRex is an all-in-one business management platform designed to optimize your workflow. It offers integrated solutions for project management, attendance tracking, and more, helping teams boost productivity and streamline daily operations."
+              // ghLink="
+              // demoLink="https://plant49-ai.herokuapp.com/"
+            />
+          </Col>
+                   <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Mazen}
+              isBlog={false}
+              title="Mazen Tv"
+              description="Mazen Tv is a platform dedicated to doctors and health awareness videos, providing users with valuable medical information and resources. It also enables online appointments with doctors, making healthcare more accessible and convenient."
+              // ghLink="
+              // demoLink="https://plant49-ai.herokuapp.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Mazen}
+              isBlog={false}
+              title="Mazen Tv"
+              description="Mazen Tv is a platform dedicated to doctors and health awareness videos, providing users with valuable medical information and resources. It also enables online appointments with doctors, making healthcare more accessible and convenient."
+              // ghLink="
+              // demoLink="https://plant49-ai.herokuapp.com/"
+            />
+          </Col>
+                    <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={github}
+              isBlog={false}
+              title="Placement Portal"
+              description="Placement Portal is a development-focused platform for student placement prediction, helping institutions and students analyze placement opportunities and outcomes."
+              // ghLink="
+              // demoLink="https://plant49-ai.herokuapp.com/"
+            />
+          </Col>
+                    <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={github}
+              isBlog={false}
+
+              title="House Price Prediction"
+              description="House Price Prediction is a development-focused platform that uses machine learning models to estimate property values, helping users and institutions analyze real estate market trends and make informed decisions."
+              ghLink="https://github.com/codexsabir/LinearRegression"
+              // demoLink='https://github.com/codexsabir/LinearRegression'
+            />
+          </Col>
+                    <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={github}
+              isBlog={false}
+              title="Movie Recommendation"
+              description="Movie Recommendation is a development-focused platform that uses machine learning models to suggest movies based on user preferences and viewing history, helping users discover new content tailored to their interests."
+              ghLink="https://github.com/codexsabir/LinearRegression"
+              // demoLink='https://github.com/codexsabir/LinearRegression'
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={github}
+              isBlog={false}
+              title="Email Spam Classifier"
+              description="Email Spam Classifier is a development-focused platform that uses machine learning models to detect and filter spam emails, helping users maintain a clean and secure inbox."
+              ghLink="https://github.com/codexsabir/LinearRegression"
+              // demoLink='https://github.com/codexsabir/LinearRegression'
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={github}
+              isBlog={false}
+              title="Currency Converter Bot"
+              description="Currency Converter Bot is a development-focused platform that uses machine learning and real-time data to convert currencies, helping users and institutions analyze exchange rates and make informed financial decisions."
+              ghLink="https://github.com/codexsabir/LinearRegression"
+              // demoLink='https://github.com/codexsabir/LinearRegression'
             />
           </Col>
 
