@@ -43,6 +43,46 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiPython />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <CgCPlusPlus />
+      </Col>
+      {/* next hjs  */}
+            <Col xs={4} md={2} className="tech-icons">
+        <img
+          src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
+          alt="nextjs"
+          style={{
+            width: "70px",
+            height: "70px",
+            filter: "invert(1)"
+          }}
+        />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img
+          src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png"
+          alt="typescript"
+          style={{
+            width: "70px",
+            height: "70px",
+          }}
+        />
+      </Col>
+      {/* Machine Learning */}
+      <Col xs={4} md={2} className="tech-icons">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+          alt="sklearn"
+          style={{
+            width: "70px",
+            height: "70px",
+
+            
+          }}
+        />
+      </Col>
+      {/* add column of nest.js */}
+      {/* Nest.js */}
       {/* add column of sql */}
       <Col xs={4} md={2} className="tech-icons">
         <TbSql />

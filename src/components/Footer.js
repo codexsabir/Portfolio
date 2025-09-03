@@ -12,7 +12,7 @@ function Footer() {
 
 
 
-  
+
   let year = date.getFullYear();
   return (
     <Container fluid className="footer">
@@ -55,7 +55,7 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
+            {/* <li className="social-icons">
               <a
                 href="https://www.instagram.com/ig_sabir_khan/"
                 style={{ color: "white" }}
@@ -64,7 +64,7 @@ function Footer() {
               >
                 <AiFillInstagram />
               </a>
-            </li>
+            </li> */}
           </ul>
         </Col>
       </Row>

@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            Welcome to my portfolio website! I'm, a dedicated MERN Stack developer & Data Analyst with a passion for crafting  web technologies and products.combined with expertise in modern frameworks like React.js , Node.js , Express.js and DataBases.
+            Welcome to my portfolio website! I'm, a dedicated SOFTWARE ENGINEER & AI ENGINEER with a passion for crafting  web technologies and products.combined with expertise in modern frameworks like React.js , Node.js , Express.js , Next.js , Nest.js , FlaskApi  and  Django.
               <br />
               <br />I am fluent in languages
               <i>
@@ -32,13 +32,13 @@ function Home2() {
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Data Science.
+                  AI.
                 </b>
               </i>
               <br />
               <br />
               Whenever possible, I also work on projects
-              with <b className="purple">BlockChain.</b>
+              with <b className="purple">Integrated Systems.</b>
               {/* <i>
                 <b className="purple">
                   {" "}
@@ -64,7 +64,7 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
-              {/* <li className="social-icons">
+              <li className="social-icons">
                 <a
                   href="https://github.com/codexsabir"
                   target="_blank"
@@ -73,7 +73,7 @@ function Home2() {
                 >
                   <AiFillGithub />
                 </a>
-              </li> */}
+              </li>
               {/* <li className="social-icons">
                 <a
                   href="https://twitter.com/codexahmar"
@@ -86,7 +86,7 @@ function Home2() {
               </li> */}
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/sabir/"
+                  href="https://www.linkedin.com/in/c0dexs4bir/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -94,7 +94,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://www.instagram.com/ig_sabir_khan/"
                   target="_blank"
@@ -103,7 +103,7 @@ function Home2() {
                 >
                   <AiFillInstagram />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </Col>
         </Row>

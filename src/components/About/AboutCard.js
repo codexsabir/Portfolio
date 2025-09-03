@@ -11,8 +11,8 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Sabir Ud Din </span>
             from <span className="purple"> Kohat, Pakistan.</span>
             <br />
-            I am currently working as a MERN Stack Web-developer at Brandora.
-           
+            I am currently working as a SOFTWARE ENGINEER at Brandora.
+
 
             <br />
             <br />
@@ -31,7 +31,7 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-          "Embark on a journey of web development where every line of code becomes a bridge to connect, empower, and transform lives across the digital landscape".{" "}
+          "A Developer Never Bound with a specific tech Stack".{" "}
           </p>
           <footer className="blockquote-footer">CodeXSabir</footer>
         </blockquote>
