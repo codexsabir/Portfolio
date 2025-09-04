@@ -45,6 +45,26 @@ function Projects() {
               // demoLink="https://chatify-49.web.app/"
             />
           </Col>
+                 <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={github}
+              isBlog={false}
+              title="Email Spam Classifier"
+              description="Email Spam Classifier is a development-focused platform that uses machine learning models to detect and filter spam emails, helping users maintain a clean and secure inbox."
+              ghLink="https://github.com/codexsabir/LinearRegression"
+              // demoLink='https://github.com/codexsabir/LinearRegression'
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={github}
+              isBlog={false}
+              title="Currency Converter Bot"
+              description="Currency Converter Bot is a development-focused platform that uses machine learning and real-time data to convert currencies, helping users and institutions analyze exchange rates and make informed financial decisions."
+              ghLink="https://github.com/codexsabir/LinearRegression"
+              // demoLink='https://github.com/codexsabir/LinearRegression'
+            />
+          </Col>
 
 
           <Col md={4} className="project-card">
@@ -62,7 +82,8 @@ function Projects() {
               imgPath={moosa}
               isBlog={false}
               title="Moosa Academy"
-              description="Send App is a dynamic communication platform inspired by the renowned tool Slack. It empowers teams to collaborate effortlessly, facilitating real-time messaging, file sharing, and project management. With its intuitive interface and robust features, Send App enhances productivity and fosters seamless collaboration, allowing teams to stay connected and achieve their goals with ease."
+              description="Moosa Academy is an innovative online learning platform designed to provide high-quality education and skill development opportunities. It offers a wide range of courses and resources, enabling learners to enhance their knowledge and advance their careers in a flexible and accessible manner."
+              // description="Send App is a dynamic communication platform inspired by the renowned tool Slack. It empowers teams to collaborate effortlessly, facilitating real-time messaging, file sharing, and project management. With its intuitive interface and robust features, Send App enhances productivity and fosters seamless collaboration, allowing teams to stay connected and achieve their goals with ease."
               // ghLink="https://github.com/soumyajit4419/Editor.io"
               // demoLink="https://editor.soumya-jit.tech/"
             />
@@ -100,16 +121,7 @@ function Projects() {
               // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Mazen}
-              isBlog={false}
-              title="Mazen Tv"
-              description="Mazen Tv is a platform dedicated to doctors and health awareness videos, providing users with valuable medical information and resources. It also enables online appointments with doctors, making healthcare more accessible and convenient."
-              // ghLink="
-              // demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
+
                     <Col md={4} className="project-card">
             <ProjectCard
               imgPath={github}
@@ -141,26 +153,7 @@ function Projects() {
               // demoLink='https://github.com/codexsabir/LinearRegression'
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={github}
-              isBlog={false}
-              title="Email Spam Classifier"
-              description="Email Spam Classifier is a development-focused platform that uses machine learning models to detect and filter spam emails, helping users maintain a clean and secure inbox."
-              ghLink="https://github.com/codexsabir/LinearRegression"
-              // demoLink='https://github.com/codexsabir/LinearRegression'
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={github}
-              isBlog={false}
-              title="Currency Converter Bot"
-              description="Currency Converter Bot is a development-focused platform that uses machine learning and real-time data to convert currencies, helping users and institutions analyze exchange rates and make informed financial decisions."
-              ghLink="https://github.com/codexsabir/LinearRegression"
-              // demoLink='https://github.com/codexsabir/LinearRegression'
-            />
-          </Col>
+
 
           {/* <Col md={4} className="project-card">
             <ProjectCard
