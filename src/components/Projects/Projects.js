@@ -1,183 +1,204 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import projex from "../../Assets/Projects/projex.png";
-// import emotion from "../../Assets/Projects/emotion.png";
-// import editor from "../../Assets/Projects/codeEditor.png";
 import discuss from "../../Assets/Projects/discuss.png";
 import send from "../../Assets/Projects/send.png";
-import leauto from "../../Assets/Projects/leauto.png";
 import bridgeREx from "../../Assets/Projects/bridgeRex.png";
 import Mazen from "../../Assets/Projects/mazen.png";
 import naviscom from "../../Assets/Projects/naviscom.png";
 import moosa from "../../Assets/Projects/moosa.png";
 import github from "../../Assets/Projects/github.png";
+import shamayai from "../../Assets/Projects/shamayai.png";
+import nermeenali from "../../Assets/Projects/nermeenaii.png";
 function Projects() {
+  const projectData = [
+    {
+      imgPath: shamayai,
+      title: "Shamay AI",
+      shortDescription:
+        "Shamay AI is an advanced automation tool designed for property firms.",
+      detailedDescription:
+        "Shamay AI is an advanced automation tool specifically designed for property firms. It streamlines complex processes, simplifies operations, and enhances decision-making with the help of AI-driven insights. The platform brings efficiency and scalability to property management and firm operations.",
+      techStack: "Next.js, OpenAI, Langchain, PostgreSQL",
+      link: "",
+    },
+    {
+      imgPath: discuss,
+      title: "Discuss App",
+      shortDescription:
+        "Discuss App provides secure and seamless video calls for companies.",
+      detailedDescription:
+        "Discuss App offers a private, high-quality virtual communication platform tailored specifically for companies seeking secure and seamless video calls. It enables efficient teamwork with better control and privacy.",
+      techStack: "Next.js, Nest.js, Websockets, Mediasoup, PostgreSQL",
+      link: "",
+    },
+    {
+      imgPath: naviscom,
+      title: "Naviscom",
+      shortDescription:
+        "Naviscom is an automated platform for deploying products on AWS.",
+      detailedDescription:
+        "Naviscom simplifies and accelerates the deployment of products on AWS. Designed for scalability and reliability, it streamlines cloud transitions and operations for businesses.",
+      techStack: "Next.js, API integrations, AI Agents, PostgreSQL, AWS",
+      link: "",
+    },
+    {
+      imgPath: send,
+      title: "Send App",
+      shortDescription:
+        "Send App is a real-time platform for seamless team collaboration.",
+      detailedDescription:
+        "Send App offers real-time messaging, file sharing, and project management for teams. Inspired by Slack, it enhances productivity and collaboration through robust communication tools.",
+      techStack: "React.js, Node.js, PostgreSQL, Redis, Websockets",
+      link: "",
+    },
+    {
+      imgPath: moosa,
+      title: "Moosa Academy",
+      shortDescription: "A high-quality online learning platform.",
+      detailedDescription:
+        "Moosa Academy provides high-quality education and skill development opportunities. It offers a wide range of courses, empowering learners to advance their careers flexibly and effectively.",
+      techStack: "React.js, Node.js, MongoDB",
+      link: "",
+    },
+    {
+      imgPath: projex,
+      title: "Projex",
+      shortDescription:
+        "Projex is a versatile application for project management.",
+      detailedDescription:
+        "Projex simplifies project tracking, task management, and team collaboration. Modeled after ClickUp, it’s an ideal tool for organizations to organize and manage workflows.",
+      techStack: "React.js, Django, PostgreSQL",
+      link: "",
+    },
+    {
+      imgPath: bridgeREx,
+      title: "BridgeRex",
+      shortDescription:
+        "BridgeRex optimizes workflow through integrated solutions.",
+      detailedDescription:
+        "BridgeRex is a complete business management platform designed to optimize daily operations. It includes solutions for project management, attendance tracking, and more.",
+      techStack: "React.js, Node.js, Redis",
+      link: "",
+    },
+    {
+      imgPath: Mazen,
+      title: "Mazen TV",
+      shortDescription:
+        "Dedicated to health awareness videos and online doctor appointments.",
+      detailedDescription:
+        "Mazen TV provides valuable health information through videos, and allows users to book online doctor appointments, making healthcare more accessible.",
+      techStack: "React.js, Firebase, MongoDB",
+      link: "",
+    },
+   {
+  imgPath: nermeenali,
+  title: "Nermeen Ali",
+  shortDescription:
+    "Health awareness platform with 3D models and online doctor appointment payments.",
+  detailedDescription:
+    "Nermeen Ali offers a unique platform for healthcare awareness, combining high-quality videos, integration of Three.js for interactive 3D health models, and seamless payment gateway services for online doctor appointments. This ensures a comprehensive and accessible healthcare experience.",
+  techStack: "React.js, Firebase, MongoDB, Three.js, Stripe/PayPal",
+  link: "",
+},
+    {
+      imgPath: github,
+      title: "House Price Prediction",
+      shortDescription:
+        "A machine learning platform for estimating property values.",
+      detailedDescription:
+        "House Price Prediction uses ML models to analyze market trends and estimate property prices, helping institutions and individuals make informed decisions.",
+      techStack: "Python, Scikit-learn",
+      link: "https://github.com/codexsabir/LinearRegression",
+    },
+  ];
+
+  const [expandedCard, setExpandedCard] = useState(null);
+
+  const revealAnimation = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  };
+
+  const handleExpandCard = (index) => {
+    setExpandedCard(expandedCard === index ? null : index);
+  };
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
+        <motion.h1
+          className="project-heading"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { delay: 0.2, duration: 1 } }}
+        >
+          My Recent <strong className="purple">Works</strong>
+        </motion.h1>
+        <motion.p
+          style={{ color: "white" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { delay: 0.5, duration: 1 } }}
+        >
           Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={discuss}
-              isBlog={false}
-              title="Discuss"
-              description="Discuss App offers a seamless virtual communication experience, akin to the popular platform Zoom. It enables users to engage in high-quality video conferencing, fostering collaboration and connection across distances.Discuss App brings people together, facilitating smooth communication and efficient teamwork in any setting."
-              // ghLink="https://github.com/soumyajit4419/Chatify"
-              // demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-                   <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={naviscom}
-              isBlog={false}
-              title="Naviscom"
-              description="Naviscom is a cloud-native platform designed for automated deployment on AWS. It streamlines the deployment process, enabling efficient, scalable, and reliable application delivery in the cloud."
-              // ghLink="https://github.com/soumyajit4419/Chatify"
-              // demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-                 <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={github}
-              isBlog={false}
-              title="Email Spam Classifier"
-              description="Email Spam Classifier is a development-focused platform that uses machine learning models to detect and filter spam emails, helping users maintain a clean and secure inbox."
-              ghLink="https://github.com/codexsabir/LinearRegression"
-              // demoLink='https://github.com/codexsabir/LinearRegression'
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={github}
-              isBlog={false}
-              title="Currency Converter Bot"
-              description="Currency Converter Bot is a development-focused platform that uses machine learning and real-time data to convert currencies, helping users and institutions analyze exchange rates and make informed financial decisions."
-              ghLink="https://github.com/codexsabir/LinearRegression"
-              // demoLink='https://github.com/codexsabir/LinearRegression'
-            />
-          </Col>
-
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={send}
-              isBlog={false}
-              title="Send App"
-              description="Send App is a dynamic communication platform inspired by the renowned tool Slack. It empowers teams to collaborate effortlessly, facilitating real-time messaging, file sharing, and project management. With its intuitive interface and robust features, Send App enhances productivity and fosters seamless collaboration, allowing teams to stay connected and achieve their goals with ease."
-              // ghLink="https://github.com/soumyajit4419/Editor.io"
-              // demoLink="https://editor.soumya-jit.tech/"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={moosa}
-              isBlog={false}
-              title="Moosa Academy"
-              description="Moosa Academy is an innovative online learning platform designed to provide high-quality education and skill development opportunities. It offers a wide range of courses and resources, enabling learners to enhance their knowledge and advance their careers in a flexible and accessible manner."
-              // description="Send App is a dynamic communication platform inspired by the renowned tool Slack. It empowers teams to collaborate effortlessly, facilitating real-time messaging, file sharing, and project management. With its intuitive interface and robust features, Send App enhances productivity and fosters seamless collaboration, allowing teams to stay connected and achieve their goals with ease."
-              // ghLink="https://github.com/soumyajit4419/Editor.io"
-              // demoLink="https://editor.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={projex}
-              isBlog={false}
-              title="Projex"
-              description="Projex is a versatile project management application modeled after the popular tool ClickUp. Offering a comprehensive suite of organizational features, Projex simplifies task management, team collaboration, and project tracking."
-              // ghLink="https://github.com/soumyajit4419/Plant_AI"
-              // demoLink="https://plant49-ai.herokuapp.com/"
-            />
-
-          </Col>
-        {/*  BridgeRex*/}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bridgeREx}
-              isBlog={false}
-              title="BridgeRex"
-              description="BridgeRex is an all-in-one business management platform designed to optimize your workflow. It offers integrated solutions for project management, attendance tracking, and more, helping teams boost productivity and streamline daily operations."
-              // ghLink="
-              // demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-                   <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Mazen}
-              isBlog={false}
-              title="Mazen Tv"
-              description="Mazen Tv is a platform dedicated to doctors and health awareness videos, providing users with valuable medical information and resources. It also enables online appointments with doctors, making healthcare more accessible and convenient."
-              // ghLink="
-              // demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-                    <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={github}
-              isBlog={false}
-              title="Placement Portal"
-              description="Placement Portal is a development-focused platform for student placement prediction, helping institutions and students analyze placement opportunities and outcomes."
-              // ghLink="
-              // demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-                    <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={github}
-              isBlog={false}
-
-              title="House Price Prediction"
-              description="House Price Prediction is a development-focused platform that uses machine learning models to estimate property values, helping users and institutions analyze real estate market trends and make informed decisions."
-              ghLink="https://github.com/codexsabir/LinearRegression"
-              // demoLink='https://github.com/codexsabir/LinearRegression'
-            />
-          </Col>
-                    <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={github}
-              isBlog={false}
-              title="Movie Recommendation"
-              description="Movie Recommendation is a development-focused platform that uses machine learning models to suggest movies based on user preferences and viewing history, helping users discover new content tailored to their interests."
-              ghLink="https://github.com/codexsabir/LinearRegression"
-              // demoLink='https://github.com/codexsabir/LinearRegression'
-            />
-          </Col>
-
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col> */}
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
-            />
-          </Col> */}
-        </Row>
+        </motion.p>
+        <motion.div layout>
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            {projectData.map((project, index) => (
+              <Col
+                md={4}
+                className="project-card"
+                key={index}
+                style={{ minHeight: "400px" }}
+              >
+                <motion.div
+                  className="project-card-animation"
+                  variants={revealAnimation}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <ProjectCard
+                    imgPath={project.imgPath}
+                    isBlog={false}
+                    title={project.title}
+                    description={
+                      <>
+                        {expandedCard === index ? (
+                          <>
+                            <strong>Solution:</strong> {project.detailedDescription}
+                            <br />
+                            <strong>Tech Stack:</strong> {project.techStack}
+                            <br />
+                            <button
+                              onClick={() => handleExpandCard(index)}
+                              className="read-more-button"
+                            >
+                              Show Less
+                            </button>
+                          </>
+                        ) : (
+                          <>
+                            <p>{project.shortDescription}</p>
+                            <button
+                              onClick={() => handleExpandCard(index)}
+                              className="read-more-button"
+                            >
+                              Read More
+                            </button>
+                          </>
+                        )}
+                      </>
+                    }
+                    ghLink={project.link}
+                  />
+                </motion.div>
+              </Col>
+            ))}
+          </Row>
+        </motion.div>
       </Container>
     </Container>
   );

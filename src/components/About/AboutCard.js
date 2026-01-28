@@ -9,12 +9,8 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Sabir Ud Din </span>
-            from <span className="purple"> Kohat, Pakistan.</span>
-            <br />
-            I am currently working as a SOFTWARE ENGINEER at Brandora.
-
-
-            <br />
+            from <span className="purple"> Islamabad, Pakistan.</span>
+           
             <br />
             Apart from coding, some other activities that I love to do!
           </p>

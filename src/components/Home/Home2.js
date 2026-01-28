@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png";
+import myImg from "../../Assets/avatar.JPG";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,7 +19,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            Welcome to my portfolio website! I'm, a dedicated SOFTWARE ENGINEER & AI ENGINEER with a passion for crafting  web technologies and products.combined with expertise in modern frameworks like React.js , Node.js , Express.js , Next.js , Nest.js , FlaskApi  and  Django.
+            I’m a Software Engineer & AI Enthusiast with a strong focus on building scalable web applications and intelligent products.
               <br />
               <br />I am fluent in languages
               <i>
@@ -36,9 +36,9 @@ function Home2() {
                 </b>
               </i>
               <br />
-              <br />
+              {/* <br />
               Whenever possible, I also work on projects
-              with <b className="purple">Integrated Systems.</b>
+              with <b className="purple">Integrated Systems.</b> */}
               {/* <i>
                 <b className="purple">
                   {" "}
